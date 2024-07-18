@@ -19,14 +19,10 @@
 			border: 0;
 		}
 		.wrapper {
-			table-layout: fixed;
-			background-color: #F7F9FC;
-			border: 1px solid #EEEEEE;
+			
 		}
 		.main {
-			width: 100%;
-			max-width: 530px;
-			background-color: #FFFFFF;
+			
 		}
 		.three-columns {
 			
@@ -45,6 +41,8 @@
 		}
 		.button {
 
+
+
 		}
 		@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
@@ -52,13 +50,16 @@
 </head>
 <body>
 
-	<center class="wrapper" width="100%">
+	<center class="wrapper" width="100%" style="width: 100%;
+	table-layout: fixed;
+	background-color: #F7F9FC;
+	border: 1px solid #EEEEEE;">
 
-		<table class="" width="100%">
+		<table class="" width="100%" style="margin-top: 45px">
 			
 			<!-- LOGO -->
 			<tr>
-				<td style="">
+				<td style="margin-top: 45px">
 					<a href="#"><img src="img/SyncProLogo.png" alt="Sync Pro Logo" width="" style="display: block; margin-left: auto; margin-right: auto;"></a>
 				</td>
 			</tr>
@@ -66,36 +67,52 @@
 			<!-- THREE COLUMN SECTION -->
 			 <tr>
 				<td>
-					<table class="main" width="100%">
+					<table class="main" width="100%" style="width: 100%;
+					max-width: 530px;
+					background-color: #FFFFFF;
+					display: block; 
+					margin-left: auto; 
+					margin-right: auto;
+					margin-top: 45px">
 						<tr>
-							<td class="three-coloumns">
-								<table class="column">
-									<tr>
-										<td class="padding">
-											<table class="content">
-												<tr>
-													<td>
-														<a href="#"><img src="img/StatusUpdateIcon.png" alt="Ticket status update icon" width="" style="display: block; margin-left: auto; margin-right: auto;"></a>
-													</td>
-												</tr>
-												<tr>
-													<td style="">
-														<h3 style="">Ticket “Customer support issue” has an update</h3>
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<p>Hello Micky Frosh,</p>
-														<p>“Jamie Johnson” updated the ticket status from “In-progress” to “In-review”.</p>
-														<p>For more details, please click on the button below.</p>
-														<a href="" class="button">View ticket details</a>
-														<p>Thank you!</p>
-													</td>
-												</tr>
-											</table>
-										</td>
-									</tr>
-								</table>
+							<td>
+								<a href="#"><img src="img/StatusUpdateIcon.png" alt="Ticket status update icon" width="" style="display: block; margin-left: auto; margin-right: auto; margin-top: 24px;"></a>
+							</td>
+						</tr>
+						<tr>
+							<td style="">
+								<h3 style="font-family: Outfit;
+								font-size: 24px;
+								font-weight: 500;
+								line-height: 36px;
+								text-align: center;
+								padding: 0 66.38px;
+								">Ticket <span style="font-weight: 700;">“Customer support issue”</span> has an update</h3>
+							</td>
+						</tr>
+						<tr>
+							<td style="font-family: Outfit;
+							font-size: 16px;
+							font-weight: 400;
+							line-height: 24px;
+							text-align: left;
+							padding: 0 66.38px;
+							">
+								<p style="margin-bottom: 32px;">Hello Micky Frosh, <br>
+								“<span><a href="" style="color: #35A7BE;">Jamie Johnson</a></span>” updated the ticket status from <span style="font-weight: 600;">“In-progress”</span> to <span style="font-weight: 600;">“In-review”</span>.
+								<br>For more details, please click on the button below.</p>
+								<a href="" class="button" style="width: Fixed (187.62px)px;
+								height: Hug (56px)px;
+								padding: 16px 35.32px 16px 35.32px;
+								gap: 11.04px;
+								border-radius: 8px;
+								opacity: 0px;
+								background: #35A7BE;
+								text-decoration: none;
+								font-weight: 700;
+								color: #FFFFFF;
+								">View ticket details</a>
+								<p style="margin-top: 32px;">Thank you!</p>
 							</td>
 						</tr>
 					</table>
